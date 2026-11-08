@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Exercícios e Function Argumentos/Parâmetros</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Function Argumentos/<span class="texto-brilhante">Parâmetros</span></h1>
+        <h2>Exercícios de Fixação<br> para Funções</h2>
+        <p>Funções podem receber argumentos, que são valores passados para a função quando ela é chamada. <br>Esses
+            argumentos podem ser usados dentro da função para realizar operações ou cálculos.</p>
+
+        <button onclick="sun(10, 20)">Calcular</button>
+    </div>
+</body>
+<style>
+
+    body{background: #6d0000; color: #fff; font-family: 'Poppins', sans-serif;}
+    h1{color: #2563eb; font-size: 3rem;}
+    span{color: #facc15;}
+
+    .texto-brilhante:hover{text-shadow: 0 0 5px #facc15, 0 0 10px #facc15, 0 0 20px #facc15, 0 0 40px #facc15;}
+
+    h2{color: #869599; font-size: 2.5rem;}
+    h2:hover{color: #5f6a79;}
+
+    p{letter-spacing: 1px; font-size: 23px; font-weight: 400; background: #1f2937; padding: 20px; border-radius: 10px;}
+    p:hover{color: #facc15;}
+
+    .container{margin-top: 13%; text-align: center; cursor: pointer;}
+
+    button{margin-top: 20px; padding: 15px 30px; font-size: 22px; font-family: 'Poppins', sans-serif; font-weight: 700; background: #facc15; color: #6d0000; border: none; border-radius: 10px; cursor: pointer;}
+    button:hover{background: #fff;}
+
+</style>
+
+<script>
+    function sun(value, value2) {
+        alert(value + " + " + value2 + " = " + (value + value2));
+        alert(value + " - " + value2 + " = " + (value - value2));
+        alert(value + " * " + value2 + " = " + (value * value2));
+        alert(value + " / " + value2 + " = " + (value / value2));
+    }
+</script>
+
+</html>
